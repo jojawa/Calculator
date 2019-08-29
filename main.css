@@ -1,0 +1,47 @@
+/*----- global -----*/
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html {
+  font-family: Circular Std,sans-serif;
+}
+body {
+  width: 100%;
+  background-image: url(img/calcBg.jp);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+table {
+  background-color: #000;
+  margin-top: 150px;
+  border-radius: 5px 5px 0px 0px;
+}
+th {
+  height: 80px;
+}
+tr {
+
+}
+td {
+  width: 60px;
+  height: 50px;
+  /*border: 1px solid #efefef;*/
+  text-align: center;
+  vertical-align: middle;
+  background-color: #D8D8D8;
+}
+/*----- wrapper -----*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+/*----- wrapper -----*/
+.row1 td:last-child, .row2 td:last-child, .row3 td:last-child, .row4 td:last-child, .row5 td:last-child{
+  background-color: #F79231;
+  color: #fff;
+}
