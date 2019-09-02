@@ -12,36 +12,49 @@ html {
 }
 body {
   width: 100%;
-  background-image: url(img/calcBg.jp);
+  background-image: url(img/);
   background-repeat: no-repeat;
   background-size: contain;
 }
-table {
-  background-color: #000;
-  margin-top: 150px;
-  border-radius: 5px 5px 0px 0px;
-}
-th {
-  height: 80px;
-}
-tr {
-
-}
-td {
-  width: 60px;
-  height: 50px;
-  /*border: 1px solid #efefef;*/
+input{
+  background-color: transparent;
   text-align: center;
   vertical-align: middle;
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+}
+form input{
+  text-align: right;
+  width: 245px;
+  cursor: default;
+  color: #eee;
+  padding: 50px 0px 0px 0px;
+  font-size: 24px;
+  font-weight: 400;
+}
+td {
   background-color: #D8D8D8;
 }
-/*----- wrapper -----*/
+/*----- containers -----*/
 .wrapper {
   display: flex;
   justify-content: center;
 }
-/*----- wrapper -----*/
-.row1 td:last-child, .row2 td:last-child, .row3 td:last-child, .row4 td:last-child, .row5 td:last-child{
+.calculator {
+  margin-top: 150px;
+  background-color: #000;
+  border-radius: 10px 10px 0px 0px;
+}
+/*----- Calculation Operators -----*/
+input[value="/"], input[value="*"],input[value="-"],input[value="+"],input[value="="]{
   background-color: #F79231;
   color: #fff;
+}
+/*----- appended -----*/
+.append{
+  width: 60px;
+  height: 50px;
+  background-color:#fff;
+  opacity: 0.6;
 }
