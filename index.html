@@ -12,22 +12,22 @@
     <div class="wrapper">
       <div class="calculator">
         <form name="result" >
-          <input type="text" name="display" class="display">
+          <input type="text" name="display" class="display" placeholder="0" disabled>
         </form>
         <table>
           <tbody>
             <tr class="row1">
               <td>
-                <input type="button" name="" value="AC">
+                <input type="button" name="" value="AC" onclick="remove()">
               </td>
               <td>
-                <input type="button" name="" value="+/-">
+                <input type="button" name="" value="+/-" onclick="sign()">
               </td>
               <td>
-                <input type="button" name="" value="%">
+                <input type="button" name="" value="%" onclick="percent()">
               </td>
               <td id="divide">
-                <input type="button" name="" value="/">
+                <input type="button" name="" value="/" onclick="divide()">
               </td>
             </tr>
             <tr class="row2">
@@ -41,7 +41,7 @@
                 <input type="button" name="" value="9" onclick="insert(9)">
               </td>
               <td id="mult">
-                <input type="button" name="" value="*">
+                <input type="button" name="" value="*" onclick="multiply()">
               </td>
             </tr>
             <tr class="row3">
@@ -55,7 +55,7 @@
                 <input type="button" name="" value="6" onclick="insert(6)">
               </td>
               <td id="subtract">
-                <input type="button" name="" value="-">
+                <input type="button" name="" value="-" onclick="subtract()">
               </td>
             </tr>
             <tr class="row4">
@@ -69,18 +69,18 @@
                 <input type="button" name="" value="3" onclick="insert(3)">
               </td>
               <td id="add">
-                <input type="button" name="" value="+">
+                <input type="button" name="" value="+" onclick="add()">
               </td>
             </tr>
             <tr class="row5">
               <td colspan="2">
-                <input type="button" name="" value="0">
+                <input type="button" name="" value="0" onclick="insert(0)">
               </td>
               <td>
-                <input type="button" name="" value=".">
+                <input type="button" name="" value="." onclick="fraction()">
               </td>
               <td id="equal">
-                <input type="button" name="" value="=">
+                <input type="button" name="" value="=" onclick="calculate()">
               </td>
             </tr>
           </tbody>
