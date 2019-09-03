@@ -1,3 +1,3 @@
-function insert(num){
+var insert = (num)=>{
   result.display.value += num;
 }
